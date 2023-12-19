@@ -66,5 +66,44 @@ INSERT INTO departments
 VALUES('Medicina', 'VIa Medicina', 33333333, 'medicina@ìgmail.com', 'www.Medicina.com', 'Mario Attanasio');
 
 
+INSERT INTO voti
+(nome, address, `level`, email, website, department_id)
+VALUES('voti', 'via voti1', 6, 'voti1@live.it', 'www.voti.it', 1);
+
+INSERT INTO voti
+(nome, address, `level`, email, website, department_id)
+VALUES('voti', 'via voti', 8, 'voti@live.it', 'www.voti.it', 3);
+
+INSERT INTO voti
+(nome, address, `level`, email, website, department_id)
+VALUES('voti', 'via voti', 9, 'voti@live.it', 'www.voti.it', 4);
+
+INSERT INTO voti
+(nome, address, `level`, email, website, department_id)
+VALUES('voti', 'via voti', 10, 'voti@live.it', 'www.voti.it', 5);
+
+
+
+INSERT into students
+(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degree_id)
+VALUES('Mario', 'Rossi', '1996/11/15', 'HDJSAJKDSAKJB', '2016/09/20', 1, 'mariorossi@live.it', 1);
+
+INSERT into students
+(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degree_id)
+VALUES('Paolo', 'Rossi', '1999/11/15', 'HDJDKADASDX', '2019/09/20', 2, 'paolorossi@live.it', 5);
+
+INSERT into students
+(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degree_id)
+VALUES('Mario', 'Rossi', '1996/11/15', 'HDJSAJKDSAKJB', '2016/09/20', 1, 'mariorossi@live.it', 4);
+
+INSERT into students
+(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degree_id)
+VALUES('Gioacchino', 'Murat', '2000/11/15', 'HDJSAJKDSAKJB', '2020/09/20', 1, 'mariorossi@live.it', 6);
+
+INSERT into students
+(name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degree_id)
+VALUES('Sergio', 'Padre', '2002/11/15', 'HDJSAJKDSAKJB', '2022/09/20', 1, 'sergiopadre@live.it', 1);
+
+
 
 
