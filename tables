@@ -1,0 +1,70 @@
+create table departments(
+id INT not null auto_increment,
+nome VARCHAR(100),
+address VARCHAR(255),
+phone INT,
+email VARCHAR(50),
+website VARCHAR(100),
+head_of_departments VARCHAR(100),
+primary key(id)
+);
+
+create table voti(
+id INT not null auto_increment,
+nome VARCHAR(100),
+address VARCHAR(255),
+`level` INT,
+email VARCHAR(100),
+website VARCHAR(255),
+primary key(id)
+);
+
+alter table `voti`
+add column department_id INT;
+
+alter table `voti`
+add foreign key(department_id) references departments(id);
+
+CREATE TABLE students(
+	id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR (100),
+    surname VARCHAR (100),
+    date_of_birth DATE,
+    fiscal_code VARCHAR(20),
+    enrolment_date DATE,
+    registration_number INT,
+    email VARCHAR (50),
+    PRIMARY KEY (id)
+);
+
+alter table `students`
+add column degree_id INT;
+
+alter table `students`
+add foreign key(degree_id) references voti(id);
+
+INSERT INTO departments
+(nome, address, phone, email, website, head_of_departments)
+VALUES('Economia', 'VIa Economia', 33333333, 'economia@ìgmail.com', 'www.Economia.com', 'Mario Rossi');
+
+delete from departments where id=2;
+
+INSERT INTO departments
+(nome, address, phone, email, website, head_of_departments)
+VALUES('Archeologia', 'via Archeologia', 33333333,'archeologia@gmail.com', 'www.Archeologia.com', 'Mario Biondi');
+
+INSERT INTO departments
+(nome, address, phone, email, website, head_of_departments)
+VALUES('Matematica', 'VIa Matematica', 33333333, 'matematica@ìgmail.com', 'www.Matematica.com', 'Mario Caputo');
+
+INSERT INTO departments
+(nome, address, phone, email, website, head_of_departments)
+VALUES('Ingegneria', 'VIa Ingegneria', 33333333, 'ingegneria@ìgmail.com', 'www.Ingegneria.com', 'Mario Catapano');
+
+INSERT INTO departments
+(nome, address, phone, email, website, head_of_departments)
+VALUES('Medicina', 'VIa Medicina', 33333333, 'medicina@ìgmail.com', 'www.Medicina.com', 'Mario Attanasio');
+
+
+
+
